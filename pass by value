@@ -1,0 +1,19 @@
+# Function
+#include<iostream>
+using namespace std;
+int arr_pass_by_reference(int arr2[100],int x)//ekane n er size x er maddome copy hobe shudu tai bitore x er man poriborton korle o main function e 
+n er man same thakbe eti hosse pass by value
+{
+    x+=100;
+}
+int main()
+{
+    int i,n,arr[100],y;
+    cin>>n;//5
+    for(i=0;i<n;i++)
+    {
+         cin>>arr[i];
+    }
+    arr_pass_by_reference(arr,n);
+    cout<<n;//5
+}
