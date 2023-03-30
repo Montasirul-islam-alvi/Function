@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+int arr_pass_by_reference(int arr2[100],int x)
+{
+    int i;
+    for(i=0;i<x;i++)
+    {
+        arr2[i]+=10;//ekane pass by reference howar karone arr1 er value o 10 kore barte thakbe tai print er somoi arr1 er value 10 kore barbe
+    }
+}
+int main()
+{
+    int i,n,arr1[100],y;
+    cin>>n;
+    for(i=0;i<n;i++)
+    {
+         cin>>arr1[i];//2,4,1,3
+    }
+    arr_pass_by_reference(arr1,n);
+    for(i=0;i<n;i++)
+    {
+        cout<<arr1[i]<<" ";//12,14,11,13
+    }
+}
