@@ -1,0 +1,23 @@
+# Function
+#include<iostream>
+using namespace std;
+int getlower(char str2[100])
+{
+    int i,count;
+    for(i=0;str2[i]!='\0';i++)
+    {
+        if(str2[i]>='a'&&str2[i]<='z')
+        {
+            count++;
+        }
+    }
+    return count;
+}
+int main()
+{
+    int i,n,y;
+    char str1[100];
+    cin>>n;
+    gets(str1);
+    cout<<getlower(str1);
+}
